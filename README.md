@@ -82,3 +82,6 @@
 
 ## 입출력 요구사항
 <img width="670" alt="스크린샷 2022-10-04 오후 10 11 02" src="https://user-images.githubusercontent.com/44702580/194317120-8c6a7de4-bf95-4fd5-9bee-1a52736ce4e3.png">
+
+## Test Results
+![스크린샷 2022-10-09 오전 12 13 20](https://user-images.githubusercontent.com/44702580/194714524-e719f0ba-1220-4a1f-aa5c-23052da0090a.png)
