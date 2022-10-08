@@ -13,14 +13,14 @@ import racingcar.util.RandomNumberGenerator;
 class CarTest {
     @Test
     void 자동차_생성_테스트() {
-        assertThatCode(() -> new Car(new CarName("sun"), new CarPosition())).doesNotThrowAnyException();
+        assertThatCode(() -> new Car(new CarName("sun"))).doesNotThrowAnyException();
     }
 
     @Test
     void 자동차_이동_테스트() {
         try (MockedStatic<RandomNumberGenerator> randomNumberMock = mockStatic(RandomNumberGenerator.class)) {
             randomNumberMock.when(() -> RandomNumberGenerator.getRandomNumber()).thenReturn(4);
-            Car car = new Car(new CarName("sun"), new CarPosition());
+            Car car = new Car(new CarName("sun"));
             car.move(new RandomMovableStrategy());
             assertThat(car.getPosition()).isEqualTo(new CarPosition(1));
         }
