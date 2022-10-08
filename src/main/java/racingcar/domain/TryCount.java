@@ -1,10 +1,10 @@
 package racingcar.domain;
 
-public class CarMoveCount {
+public class TryCount {
     public static final int MINIMUM_POSITIVE_NUMBER = 1;
     private final int count;
 
-    public CarMoveCount(String countAsString) {
+    public TryCount(String countAsString) {
         validateCountIsNumber(countAsString);
         int count = Integer.parseInt(countAsString);
         validateIfCountIsPositive(count);
@@ -25,7 +25,7 @@ public class CarMoveCount {
         }
     }
 
-    public int getMoveCount() {
+    public int value() {
         return count;
     }
 }
